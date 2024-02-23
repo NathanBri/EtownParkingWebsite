@@ -9,7 +9,8 @@ $web_string = DatabaseAPIConnection::get($fullUrl, $vars);
 $badgeTypes = json_decode($web_string);
 echo "<div class=\"dayTime\">";
 echo "<div class=\"userSelect\">";
-echo "<select class=\"dropdown\" id=\"badgeType\" onchange=\"showParking()\"\"><option id = 0>Choose an option</option>";
+echo "<select class=\"dropdown\" id=\"badgeType\" onchange=\"showParking()\"><option id = 0>Choose an option</option>";
+
 foreach ($badgeTypes as $badgeType) {
     echo "<option value=\"" . $badgeType->name . "\" id=\"" . $badgeType->typeID . "\">" . $badgeType->name . "</option>";
 }
@@ -18,7 +19,7 @@ echo "</select>";
 <LINK rel='stylesheet' href='css/dropdown.css'>
 
 <select class="dropdown" id="day" onchange="showParking()">
-    <option id="0">Please Choose a Day</option>
+    <option id="0">Select Day</option>
     <option id="sun" value="Sunday">Sunday</option>
     <option id="mon" value="Monday">Monday</option>
     <option id="tue" value="Tuesday">Tuesday</option>
@@ -40,7 +41,7 @@ echo "</select>";
 <label for="EV" class="ev">EV</label>
 
 <select class="dropdown" id="building" onchange="showParking()">
-    <option id="0">Select a Building</option>
+    <option id="0">Select Building</option>
     <option id="ba" value="Building1">Brossman Commons (BSC)</option>
     <option id="bb" value="Building2">Bowers Center</option>
     <option id="bc" value="Building3">Masters Center (Includes\n Esbenshade, Lyet, and Musser)</option>
@@ -56,7 +57,7 @@ echo "</select>";
 </select>
 
 <select class="dropdown" id="residence" onchange="showParking()">
-    <option id="0">Select a Residence Hall</option>
+    <option id="0">Select Residence Hall</option>
     <option id="ra" value="Schlosser">Schlosser</option>
     <option id="rb" value="Royer">Royer</option>
     <option id="rc" value="Myer">Myer</option>

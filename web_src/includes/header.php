@@ -10,7 +10,7 @@
     <li class="home"><a href="./">Home</a></li>
     <!--<li><a href="#">onclick=switchBadge('')-->
     <li><a href="https://www.etown.edu/offices/security/parkingregs.aspx" target="_blank">Regulations</a></li>
-    <li><a href="./editDatabase.php">Edit Database</a></li>
+    <li><a href="./editDatabase.php">Database</a></li>
     <li><a href="#">Settings</a></li>
     <li><a href="#">Contact</a></li>
     <li><a href="#">About</a></li>

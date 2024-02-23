@@ -1,8 +1,8 @@
 h1, .logo{
-    background-color:  #004B98;
+    background-color:  #0A2240;
 }
 .logo{
-    width: 80px;
+    width: 100px;
      
 }
 
@@ -12,7 +12,7 @@ h1, .logo{
 }
 
 .home{
-  margin-left: 14%;
+  margin-left: 0%;
 }
 
 
@@ -21,7 +21,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #004B98;
+  background-color: #0A2240;
   height: 60px; /* Reduced height */
   display: flex;
   align-items: center; /* Center vertically */
@@ -31,7 +31,7 @@ ul {
 
 li {
   float: left;
-  font-size: 26px;
+  font-size: 36px;
 }
 
 li a {
@@ -56,12 +56,12 @@ li a:hover {
   background-color: #3DB5E6;
   text-decoration: underline;
   text-decoration-color: black;
-  color: #E1261C;
+  color: black;
   text-underline-offset: 0.1em;
 }
 
 li {
-  border-right: 2px solid #0A2240;
+  border-right: 2px solid #3DB5E6;
   height: 50px;
 }
 
