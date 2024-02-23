@@ -2,7 +2,7 @@ h1, .logo{
     background-color:  #004B98;
 }
 .logo{
-    width: 150px;
+    width: 80px;
      
 }
 
@@ -12,7 +12,7 @@ h1, .logo{
 }
 
 .home{
-  margin-left: 0px;
+  margin-left: 14%;
 }
 
 
@@ -22,9 +22,11 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #004B98;
-  height: 90px;
+  height: 60px; /* Reduced height */
   display: flex;
+  align-items: center; /* Center vertically */
   width: 100%;
+  margin-left: auto; /* Align to the right */
 }
 
 li {
@@ -33,20 +35,19 @@ li {
 }
 
 li a {
-  display: block;
+  display: flex; /* Allow vertical centering */
+  align-items: center; /* Center vertically */
   color: white;
   text-align: center;
-  padding: 30px 15px 0px;
+  padding: 0 10px;
   text-decoration: none;
-  height: 80px;
+  height: 100%; /* Full height of the container */
 }
 
-.etownLogo a{
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 10px;
+.etownLogo a {
+  padding: 0 20px; /* Adjust padding */
 }
+
 .etownLogo a:hover{
   background-color: #004B98;
 }
@@ -56,13 +57,12 @@ li a:hover {
   text-decoration: underline;
   text-decoration-color: black;
   color: #E1261C;
-  text-underline-offset: 0.5em;
-  
+  text-underline-offset: 0.1em;
 }
 
 li {
   border-right: 2px solid #0A2240;
-  height: 90px;
+  height: 50px;
 }
 
 li:last-child {

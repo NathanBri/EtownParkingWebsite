@@ -189,13 +189,13 @@ require_once "includes/header.php";
             </select>
         </div>
 
-        <input type="radio" id="noneEV" name="EV" checked onclick="showEV(true);">
-        <label for="noneEV">none EV</label>
+        <input type="radio" id="ExcludeEV" name="ExcludeEV" checked onclick="showEV(true);">
+        <label for="ExcludeEV">Exclude EV</label>
 
-        <input type="radio" id="EV" name="EV" onclick="showEV(false);">
-        <label for="EV">EV</label><br>
+        <input type="radio" id="IncludeEV" name="IncludeEV" onclick="showEV(false);">
+        <label for="IncludeEV">Include EV</label><br>
 
-        <img src="images/ETOWN_Footer_Logo.png" alt="Map" usemap="#campusMap" width="200" height="84"
+        <img src="images/ETOWN_Footer_Logo.png" alt="Map" usemap="#campusMap" width="150" height="63"
             style="position:relative">
     </div>
 </body>
