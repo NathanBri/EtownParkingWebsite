@@ -82,7 +82,7 @@ require_once "includes/header.php";
             position: absolute;
             top: 12%;
             left: -2px;
-            right: 88%;
+            right: 86%;
             /* Adjust the left position to move the dropdowns to the left */
             z-index: 1000;
             border: 1% solid #ccc;
@@ -95,7 +95,7 @@ require_once "includes/header.php";
 
         /* CSS for dropdown */
         .dropdown {
-            font-size: 16px;
+            font-size: 20px;
             font-family: Arial, sans-serif;
             /* Example font-family */
             background-color: #666;
@@ -104,7 +104,7 @@ require_once "includes/header.php";
             /* White text color */
             padding: 10% 2%;
             /* Increased padding for better spacing */
-            width: 200px;
+            width: 250px;
             /* Adjust width as needed */
             transition: background-color 0.3s;
             /* Smooth transition for hover effect */
@@ -151,6 +151,15 @@ require_once "includes/header.php";
             /* Ensure images don't exceed the width of the modal content */
             height: auto;
             /* Maintain aspect ratio */
+        }
+
+        /* CSS for dropdown container */
+        .logo_2 {
+            position: absolute;
+            top: 88%;
+            left: -2px;
+            right: 86%;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -225,8 +234,9 @@ require_once "includes/header.php";
             <option id="rg" value="Hackman">Hackman Apartments</option>
             <option id="rh" value="Quads">Quads</option>
         </select>
-
-        <img src="images/ETOWN_Footer_Logo.png" alt="Map" usemap="#campusMap" width="150" height="63"
+    </div>
+    <div class="logo_2">
+        <img src="images/ETOWN_Footer_Logo.png" alt="Map" usemap="#campusMap" width="210" height="88.2"
             style="position:relative">
     </div>
 </body>
