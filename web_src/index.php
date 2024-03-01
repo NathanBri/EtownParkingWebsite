@@ -9,159 +9,8 @@ require_once "includes/header.php";
 <!--Formatting-->
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(0, 0, 0, 0.4);
-
-        }
-
-        /* The Modal (background) */
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 100px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
-
-        /* Modal Content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-height: 80%;
-            /* Set a max height for the modal content */
-            overflow-y: auto;
-            /* Enable vertical scroll if needed */
-        }
-
-        /* Container for the image */
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Container for the map */
-        .map-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-left: 10%;
-            /* Adjust the left margin to create space between dropdowns and image */
-        }
-
-        /* CSS for container */
-        .container {
-            position: relative;
-        }
-
-        /* CSS for dropdown container */
-        .dropdown-container {
-            position: absolute;
-            top: 12%;
-            left: -2px;
-            right: 86%;
-            /* Adjust the left position to move the dropdowns to the left */
-            z-index: 1000;
-            border: 1% solid #ccc;
-            /* Border properties for the selectable portion */
-            border-radius: 8px;
-            /* Rounded corners */
-            overflow: hidden;
-            /* Hide overflow from rounded corners */
-        }
-
-        /* CSS for dropdown */
-        .dropdown {
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            /* Example font-family */
-            background-color: #666;
-            /* Dark gray background */
-            color: #fff;
-            /* White text color */
-            padding: 10% 2%;
-            /* Increased padding for better spacing */
-            width: 250px;
-            /* Adjust width as needed */
-            transition: background-color 0.3s;
-            /* Smooth transition for hover effect */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            /* Add shadow for depth */
-            white-space: nowrap;
-            /* Prevent text wrapping */
-            overflow: hidden;
-            /* Hide overflow text */
-            text-overflow: ellipsis;
-            /* Display ellipsis for overflow text */
-        }
-
-        /* Hover effect */
-        .dropdown:hover {
-            background-color: #555;
-            /* Slightly darker gray on hover */
-        }
-
-        /* Text color inside the modal */
-        .modal-content p {
-            color: #000;
-            /* Set the text color to black or your desired color */
-        }
-
-        /* The Close Button */
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* Responsive image */
-        .modal-content img {
-            max-width: 100%;
-            /* Ensure images don't exceed the width of the modal content */
-            height: auto;
-            /* Maintain aspect ratio */
-        }
-
-        /* CSS for dropdown container */
-        .logo_2 {
-            position: absolute;
-            top: 88%;
-            left: -2px;
-            right: 86%;
-            z-index: 1000;
-        }
-    </style>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='./css/head.css'>
 </head>
 
 <!--Dropdown Creation and Placement-->
@@ -200,13 +49,6 @@ require_once "includes/header.php";
             <option value="Other">Other</option>
         </select>
 
-        <input type="radio" id="ExcludeEV" name="ExcludeEV" checked onclick="showEV(true);">
-        <label for="ExcludeEV">Exclude EV</label>
-        <div>
-        </div>
-        <input type="radio" id="IncludeEV" name="IncludeEV" onclick="showEV(false);">
-        <label for="IncludeEV">Include EV</label><br>
-
         <select class="dropdown" id="building" onchange="showParking()">
             <option id="0">Select Building</option>
             <option id="ba" value="Building1">Brossman Commons (BSC)</option>
@@ -234,6 +76,17 @@ require_once "includes/header.php";
             <option id="rg" value="Hackman">Hackman Apartments</option>
             <option id="rh" value="Quads">Quads</option>
         </select>
+
+        <input type="radio" id="ExcludeEV" name="EVOption" checked onclick="showEV(true);">
+        <label for="ExcludeEV">Exclude EV</label>
+
+        <div>
+        </div>
+
+        <input type="radio" id="IncludeEV" name="EVOption" onclick="showEV(false);">
+        <label for="IncludeEV">Include EV</label>
+
+
     </div>
     <div class="logo_2">
         <img src="images/ETOWN_Footer_Logo.png" alt="Map" usemap="#campusMap" width="210" height="88.2"
@@ -549,38 +402,37 @@ require_once "includes/header.php";
 <body>
     <p id="brownPin2">
         <img src="images/lotpin2.png" usemap="#brownPinMap" id="7" width="14.88" height="23.76"
-            style="position: absolute; left: 800px; top: 150px; display:block;">
+            style="position: absolute; left: 805px; top: 150px; display:block;">
     </p>
-    <!--<img src="images/lotpin2.png" usemap="#brownPinMap" id="7" width="14.88" height="23.76"
-            style="position: absolute; left: 429px; top: 268px; display:block;">-->
+
     <p id="bretheranPin2">
         <img src="images/lotpin2.png" usemap="#bretheranPinMap" id="13" width="14.88" height="23.76"
-            style="position: absolute; left: 575px; top: 960px; display:block;">
+            style="position: absolute; left: 585px; top: 960px; display:block;">
     </p>
 
     <p id="hooverPin2">
         <img src="images/lotpin2.png" usemap="#hooverPinMap" id="2" width="14.88" height="23.76"
-            style="position: absolute; left: 620px; top: 470px; display:block;">
+            style="position: absolute; left: 630px; top: 470px; display:block;">
     </p>
 
     <p id="bowersPin2">
         <img src="images/lotpin2.png" usemap="#bowersPinMap" id="18" width="14.88" height="23.76"
-            style="position: absolute; left: 1025px; top: 630px; display:block;">
+            style="position: absolute; left: 1035px; top: 630px; display:block;">
     </p>
 
     <p id="chapelEastPin2">
         <img src="images/lotpin2.png" usemap="#chapelEastPinMap" id="5" width="14.88" height="23.76"
-            style="position: absolute; left: 965px; top: 355px; display:block;">
+            style="position: absolute; left: 975px; top: 355px; display:block;">
     </p>
 
     <p id="youngPin2">
         <img src="images/lotpin2.png" usemap="#youngPinMap" id="6" width="14.88" height="23.76"
-            style="position: absolute; left: 1065px; top: 315px; display:block;">
+            style="position: absolute; left: 1075px; top: 315px; display:block;">
     </p>
 
     <p id="esbenshadePin2">
         <img src="images/lotpin2.png" usemap="#esbenshadePinMap" id="3" width="14.88" height="23.76"
-            style="position: absolute; left: 740px; top: 400px; display:block;">
+            style="position: absolute; left: 750px; top: 400px; display:block;">
     </p>
 
     <p id="chapelWestPin2">
@@ -590,52 +442,52 @@ require_once "includes/header.php";
 
     <p id="hackmanPin2">
         <img src="images/lotpin2.png" usemap="#hackmanPinMap" id="15" width="14.88" height="23.76"
-            style="position: absolute; left: 1010px; top: 720px; display:block;">
+            style="position: absolute; left: 1020px; top: 720px; display:block;">
     </p>
 
     <p id="hackmanSouthPin2">
         <img src="images/lotpin2.png" usemap="#hackmanSouthPinMap" id="16" width="14.88" height="23.76"
-            style="position: absolute; left: 1070px; top: 820px; display:block;">
+            style="position: absolute; left: 1080px; top: 820px; display:block;">
     </p>
 
     <p id="southFoundersPin2">
         <img src="images/lotpin2.png" usemap="#southFoundersPinMap" id="17" width="14.88" height="23.76"
-            style="position: absolute; left: 1010px; top: 895px; display:block;">
+            style="position: absolute; left: 1020px; top: 895px; display:block;">
     </p>
 
     <p id="myerWestPin2">
         <img src="images/lotpin2.png" usemap="#myerWestPinMap" id="12" width="14.88" height="23.76"
-            style="position: absolute; left: 510px; top: 870px; display:block;">
+            style="position: absolute; left: 520px; top: 870px; display:block;">
     </p>
 
     <p id="brinserPin2">
         <img src="images/lotpin2.png" usemap="#brinserPinMap" id="14" width="14.88" height="23.76"
-            style="position: absolute; left: 785px; top: 710px; display:block;">
+            style="position: absolute; left: 795px; top: 710px; display:block;">
     </p>
 
     <p id="admissionsPin2">
         <img src="images/lotpin2.png" usemap="#admissionsPinMap" id="1" width="14.88" height="23.76"
-            style="position: absolute; left: 275px; top: 705px; display:block;">
+            style="position: absolute; left: 285px; top: 705px; display:block;">
     </p>
 
     <p id="alphaPin2">
         <img src="images/lotpin2.png" usemap="#alphaPinMap" id="9" width="14.88" height="23.76"
-            style="position: absolute; left: 540px; top: 695px; display:block;">
+            style="position: absolute; left: 550px; top: 695px; display:block;">
     </p>
 
     <p id="alphaDrivePin2">
         <img src="images/lotpin2.png" usemap="#alphaDrivePinMap" id="10" width="14.88" height="23.76"
-            style="position: absolute; left: 575px; top: 770px; display:block;">
+            style="position: absolute; left: 585px; top: 770px; display:block;">
     </p>
 
     <p id="alphaVisitorPin2">
         <img src="images/lotpin2.png" usemap="#alphaVisitorPinMap" id="8" width="14.88" height="23.76"
-            style="position: absolute; left: 570px; top: 650px; display:block;">
+            style="position: absolute; left: 580px; top: 650px; display:block;">
     </p>
 
     <p id="campusSafetyPin2">
         <img src="images/lotpin2.png" usemap="#campusSafetyPinMap" id="11" width="14.88" height="23.76"
-            style="position: absolute; left: 420px; top: 850px; display:block;">
+            style="position: absolute; left: 430px; top: 850px; display:block;">
     </p>
 </body>
 
