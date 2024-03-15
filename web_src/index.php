@@ -105,7 +105,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Admissions Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/CollegeMapAdmissions.png">
+                <img src="images/lot_images/Admissions_Lot.png">
             </div>
         </div>
     </div>
@@ -117,7 +117,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Hoover Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/CollegeMapHoover.png">
+                <img src="images/lot_images/Hoover.png">
             </div>
         </div>
     </div>
@@ -129,7 +129,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Esbenshade Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/CollegeMapEsbenshade.png">
+                <img src="images/lot_images/Esbenshade.png">
             </div>
         </div>
     </div>
@@ -141,7 +141,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Leffler Chapel West Lot</p>
                 <p>Available 24/7 for all staff, 4pm-6am and weekends for students</p>
-                <img src="images/lots/ElizabethtownLotLefflerWest.png">
+                <img src="images/lot_images/Leffler_West.png">
             </div>
         </div>
     </div>
@@ -153,7 +153,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Leffler Chapel East Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/ElizabethtownLotLefflerEast.png">
+                <img src="images/lot_images/Leffler_East.png">
             </div>
         </div>
     </div>
@@ -165,7 +165,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Young Center Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/ElizabethtownLotYoungCenter.png">
+                <img src="images/lot_images/Young_Center.png">
             </div>
         </div>
     </div>
@@ -179,7 +179,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Brown Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/ElizabethtownLotBrown.png">
+                <img src="images/lot_images/Brown.png">
             </div>
         </div>
     </div>
@@ -193,7 +193,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Alpha Visitor Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/CollegeMapAlphaVisitor.png">
+                <img src="images/lot_images/Alpha_Visitor.png">
             </div>
         </div>
     </div>
@@ -207,7 +207,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Alpha Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/CollegeMapAlpha.png">
+                <img src="images/lot_images/Alpha_Lot.png">
             </div>
         </div>
     </div>
@@ -221,7 +221,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Alpha Drive Lot</p>
                 <p>Available 24/7 for all students and staff</p>
-                <img src="images/lots/CollegeMapAlphaDrive.png">
+                <img src="images/lot_images/Alpha_Drive.png">
             </div>
         </div>
     </div>
@@ -233,7 +233,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Campus Security Lot</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapCampusSafety.png">
+                <img src="images/lot_images/Campus_Security.png">
             </div>
         </div>
     </div>
@@ -245,7 +245,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Myer West Lot</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapMyerWest.png">
+                <img src="images/lot_images/Myer_West.png">
             </div>
         </div>
     </div>
@@ -257,7 +257,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Church of the Brethren Lot</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapBretheranChurch2.png">
+                <img src="images/lot_images/Brethren_Church.png">
             </div>
         </div>
     </div>
@@ -269,7 +269,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Brinser Lot</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapBrinser.png">
+                <img src="images/lot_images/Brinser.png">
             </div>
         </div>
     </div>
@@ -281,7 +281,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Hackman Apartments North Lot</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapHackman.png">
+                <img src="images/lot_images/HackmanN.png">
             </div>
         </div>
     </div>
@@ -293,7 +293,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Hackman Apartments South Lot</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapHackmanSouth.png">
+                <img src="images/lot_images/HackmanS.png">
             </div>
         </div>
     </div>
@@ -305,7 +305,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>South Founders Lot (behind tennis courts)</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapSouthFounders.png">
+                <img src="images/lot_images/FoundersS.png">
             </div>
         </div>
     </div>
@@ -317,7 +317,7 @@ require_once "includes/header.php";
             <div class="image-container">
                 <p>Bowers Center Lot</p>
                 <p>Available Monday 6am - Friday 6pm for all students and staff</p>
-                <img src="images/lots/CollegeMapBowers.png">
+                <img src="images/lot_images/Bowers.png">
             </div>
         </div>
     </div>
