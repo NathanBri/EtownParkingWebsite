@@ -1,9 +1,18 @@
-<?PHP
+<?php
+//connect to the db
 
-global $servername,$database,$username,$password,$GLOBAL_API_KEY;
+$GLOBAL_API_KEY = "1111";
 
-$servername = "127.0.0.1";
-$database = "etownparking";
+$servername = "156.67.74.51";
+$username = "u413142534_car";
+$password = "IjustW@ntAspac3";
+$database = "u413142534_parking";
+
+//local database
+/*
+$servername = "localhost";
 $username = "root";
 $password = "";
-$GLOBAL_API_KEY = "848429r2g";
+$database = "etownparking";
+*/
+?>
